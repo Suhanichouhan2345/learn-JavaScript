@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT</title>
+</head>
+<style>
+
+*{
+ margin: 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.body,html{
+   background-color: #378b03;  
+      margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+}
+.hearder{
+    display: flex;
+     background-color:#023D54;   
+    color: #e5e7eb;
+    padding: 30px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+     text-shadow: 5px 5px 2px rgb(17, 27, 214);
+      text-shadow: 5px 5px 2px rgb(97, 105, 2);
+      width: 98%;
+}
+.footer{
+     display: flex;
+   background-color: #023D54;   
+    color: #e5e7eb;
+    padding: 30px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+      text-shadow: 5px 5px 2px rgb(17, 27, 214);
+      width: 98%;
+}
+.main{
+    display: flex;
+     width: 100%;
+}
+.main1{
+    width: 60%;
+    padding: 10px;
+  background-color: #173c00;  
+     height: 77vh;
+ display: flex;
+  align-items: center;
+  gap:20px;
+  margin: 7px;
+ justify-content: center;
+ 
+}
+.main1:hover{
+       background-color: rgb(8, 65, 6);
+}
+.main2:hover{
+  background-color: rgb(8, 65, 6);
+}
+.main2{
+  width: 40%;
+  height: 79vh;
+  display: flex;
+  margin: 7px;
+  padding-left: 30px;
+  align-items: center;
+     background-color: #173c00;  
+ justify-content: center;
+ 
+}
+.box{
+    position: relative;
+    height: 50vh;
+    width: 20%;
+      box-shadow: 2px 2px 2px rgb(154, 236, 164);
+    color: #e5e7eb;
+    padding: 5px;
+    border-radius: 15px;
+  transition: all 0.4s ease;
+ border: 1px solid palevioletred;
+    background-color: #2561009e;
+     justify-content: center;
+     align-items: center;
+}
+.box:hover{
+    text-shadow: 5px 5px 2px rgb(4, 8, 85);
+     background-color:rgb(3, 95, 19);
+     color: #78a1f4;
+      transform: scale(1.05);
+}
+.box h2{
+    color: #d3d9e4;
+    text-shadow: 5px 5px 2px rgb(4, 50, 85);
+}
+.box h2:hover{
+    color: #82a4e9;
+    text-shadow: 5px 5px 2px rgb(32, 14, 103);
+}
+
+
+.box1{
+    position: absolute;
+    transform: translate(-10%,-10%);
+    height: 50vh;
+    width: 20%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid palevioletred;
+      box-shadow: 12px 12px 0px rgb(2, 170, 22);
+     justify-content: center;
+     align-items: center;
+}
+.box1 img{
+ width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#one{
+    z-index: 4;
+    rotate:-7deg ;
+    background-color: rgb(2, 122, 44);
+}
+#one :hover{
+    z-index: 20;
+      background-color: rgb(1, 100, 34);
+}
+#two{
+
+    z-index: 3;
+    rotate: -14deg;
+    background-color: rgb(22, 60, 149);
+}
+#two:hover{
+    z-index: 30;
+     background-color: rgb(136, 9, 191);
+}
+#three{
+    z-index: 2;
+    rotate: -21deg;
+    background-color: rgb(21, 134, 154);
+}
+#three:hover{
+    z-index: 40;
+  background-color: rgb(2, 49, 18);
+}
+#four{
+    z-index: 1;
+    rotate: -28deg;
+    background-color: rgb(136, 9, 191);
+}
+#four:hover{
+    z-index: 10;
+   background-color: rgb(21, 134, 154);
+}
+</style>
+<body>
+    <div class="hearder"> <h2>REACT</h2></div>
+     <div class="main">
+    <div class="main1">
+   
+         <div  class="box">
+            <h2> Components</h2> <br><br>
+1. React app chhote-chhote components se banta hai<br><br>
+2. Component ek function ya class hota hai<br><br>
+3. Code reuse karna easy ho jata hai<br>
+4. UI ko manage karna simple hota hai<br><br>
+            </div>
+            <div  class="box">
+               <h2>JSX (JavaScript XML) </h2><br><br>
+1. JSX me HTML + JavaScript ek saath likhte hain<br><br>
+2. Code readable aur clean hota hai<br>
+3. Browser JSX ko direct nahi samajhta<br>
+4. Babel JSX ko JavaScript me convert karta hai <br> 
+            </div>
+            <div class="box">
+              <h2> Props</h2> <br>
+1. Props ka use data pass karne ke liye hota hai<br><br>
+2. Parent component se child component me jata hai<br><br>
+3. Props read-only hote hain<br>
+4. Component ko dynamic banate hain<br><br>
+               
+            </div>
+            <div  class="box">
+               <h2>State</h2><br>
+1. State component ka internal data hota hai<br><br>
+2. State change hone par UI automatically update hoti hai<br><br>
+3. useState() hook se state banate hain<br>
+4. User interaction handle karne me use hota hai<br><br>
+            </div>
+            </div>
+              <div class="main2">
+                <div id="one" class="box1">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.gjAA_Ej35qFYGFUQGVEICgHaEb?pid=Api&P=0&h=180">
+            </div>
+            <div id="two" class="box1">
+                 <img src="https://tse4.mm.bing.net/th/id/OIP.R8SxEC8QtJey-sZpkliQwwHaHa?pid=Api&P=0&h=180">
+            </div>
+            <div id="three" class="box1">
+                 <img src="https://tse1.mm.bing.net/th/id/OIP.8Fg7ir3jqiXdp739mVF83AHaHa?pid=Api&P=0&h=180">
+            </div>
+            <div id="four" class="box1">
+                 <img src="https://miro.medium.com/v2/resize:fit:1358/format:webp/1*cD6wIFgqQ9k4LXHu-b7yiA.png">
+            </div>
+            </div>
+              </div>
+    </div> 
+    <div class="footer"><marquee behavior="scroll" direction="right" scrollamount="10"><h2>THANK YOU !!</h2></marquee></div>
+</body>
+</html>

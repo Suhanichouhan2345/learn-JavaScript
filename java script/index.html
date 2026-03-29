@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+
+<form>
+    <label>Name</label><br>
+    <input type="text" id="name" placeholder="Enter Your Name" required>
+    <br><br>
+
+    <label>Phone Number</label><br>
+    <input type="text" id="phone" placeholder="Enter Your Phone Number" required>
+    <br><br>
+
+    <label>Address</label><br>
+    <input type="text" id="address" placeholder="Enter Your Address" required>
+    <br><br>
+
+    <label>Email</label><br>
+    <input type="email" id="email" placeholder="Enter Your Email" required>
+    <br><br>
+
+    <label>Password</label><br>
+    <input type="text" id="pass" placeholder="Enter Your Password" required>
+    <br><br>
+
+    <button type="submit" onclick="login(event)">Login</button>
+</form>
+
+<p id="demo"></p>
+<p id="msg"></p>
+
+<script>
+function login(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const address = document.getElementById("address").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("pass").value;
+
+    if (passwordValidation(password)) {
+        const data = {
+            name: name,
+            phone: phone,
+            address: address,
+            email: email,
+            password: password
+        };
+
+        document.getElementById("demo").innerHTML = "Login Successful";
+        document.getElementById("msg").innerHTML = "";
+        console.log(data);
+    } else {
+        document.getElementById("msg").innerHTML = "Invalid Password";
+        document.getElementById("demo").innerHTML = "";
+    }
+}
+
+function passwordValidation(password) {
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    return passwordRegex.test(password);
+}
+</script>
+
+</body>
+</html>

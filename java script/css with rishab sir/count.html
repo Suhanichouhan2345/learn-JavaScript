@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>counter</title>
+</head>
+<style>
+ 
+.counter{
+background-color: pink;
+text-align: center;
+padding: 5px;
+}
+
+</style>
+<body>
+    
+<div class="counter">
+    <h2>Counter</h2>
+    <div id="count">count to click</div>
+    <button onclick="decrease()">-</button>
+     <button class="reset" onclick="reset()">Reset</button>
+    <button onclick="increase()">+</button>
+</div>
+</body>
+<script>
+      let count = 0;
+    function increase() {
+        count++;
+        document.getElementById("count").innerText = count;
+    }
+
+    function decrease() {
+        count--;
+        document.getElementById("count").innerText = count;
+    }
+    
+    function reset() {
+        count = 0;
+        document.getElementById("count").innerText = count;
+    }
+    function fatch
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+</script>
+     
+</html>

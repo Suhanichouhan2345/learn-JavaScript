@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Application</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.body,html{
+   background-color: #374bcb;   
+}
+.header{
+    display: flex;
+      background-color: #280463;   
+    color: #e5e7eb;
+    padding: 32px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+     text-shadow: 5px 5px 2px rgb(23, 96, 175);
+}
+.main{
+ display: flex;
+ height: calc(100vh - 180px);
+ flex: 1;
+ 
+}
+
+.sidebar{
+    display: flex;
+    width: 21%;
+    padding: 2px;
+    margin: 4px;
+      background-color: #7c47d6;
+    flex-direction: column;
+}
+.tab{
+    margin: 10px;
+    padding: 26px 26px;
+    background-color: #041837;   
+    color: #e5e7eb;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+      box-shadow: 2px 4px 2px rgb(155, 242, 241);
+}
+.tab:hover{
+   background-color: #280463;   
+    color: #ffffff;
+}
+.footer{
+    display: flex;
+      background-color: #1d0938;
+    color: #e5e7eb;
+    padding: 15px;
+    justify-content: center;
+   
+}
+.content{
+    margin: 4px;
+    display: flex;
+    width: 79%;
+     background-color: #7c47d6;
+    color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+    border: none;   
+    padding: 10px;  
+    outline: none;  
+}
+
+</style>
+<div class="header">
+  <h1>ONLINE APPLICATION</h1>
+</div>
+
+<div class="main">
+  <div class="sidebar">
+  <a href="https://www.desmos.com/calculator" target="con" class="tab">Calculator</a>
+  <a href="https://jsfiddle.net" target="con" class="tab">JSFiddle</a>
+  <a href="https://codepen.io/pen/" target="con" class="tab">CodePen</a>
+  <a href="https://codesandbox.io/embed/new" target="con" class="tab">CodeSandbox</a>
+<a href="https://chromedino.com" target="con" class="tab">Dino Game</a>
+
+  </div>
+  <iframe id="content" class="content" name="con"src="webonlinelayout.html" ></iframe>
+</div>
+
+     <div class="footer"><marquee behavior="scroll" direction="right" scrollamount="10"><h2>Thank you !!</h2></marquee></div>
+</body>
+<script>
+    let items = document.querySelectorAll(".tab");
+let data = document.getElementById("content");
+
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    const value = item.textContent;
+    data.textContent = value;
+  });
+});
+</script>
+</html>

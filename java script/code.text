@@ -1,0 +1,33 @@
+                
+                 8/1/26
+// turnary opreater : it is just to check the condtion on java scipt
+const age = parseInt(prompt("enter age"))
+ const check = (age >= 18) ? "Adult" : "Minor"
+console.log(check);
+_______________________________________________
+ 
+// nulishing and polishing
+let age = 9 ;
+console.log(age)
+let check = age ?? "i dont have data"
+console.log(check)
+__________________________________
+
+15/1/26
+ let str = "hello";
+let reversedStr = str.split('').reverse().join('');
+console.log(reversedStr);
+
+___________________________________________
+arry data type object
+let name = "xyz";
+let reverseString = '';
+for (let i = name.length - 1; i >= 0; i--) {
+    reverseString += name[i];
+}
+console.log(reverseString);
+------------------------------
+console.log(arr.fill(2));
+same value fill ho gayege
+----------------
+oder of essiqition jo phle h vo phle hi chlaega

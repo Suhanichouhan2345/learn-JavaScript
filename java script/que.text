@@ -1,0 +1,186 @@
+
+6/12/26let num = 10;
+if (num%2==0){
+    console.log("evean");
+} 
+else {
+    console.log (" odd ");
+}
+__________________________________
+let num = -10;
+if (num > 0){
+    console.log(" positive number ");
+} else if(num<0) {
+    console.log(" negative");
+} else {
+    console.log("zero");
+}
+______________________________________
+let num = 11;
+for (let i =1; i<num; i++){
+    console.log(i);
+}
+______________________________________
+// table of five
+let x = 5;
+for (let i = 1; i<=10; i++){
+    console.log(i*x);
+}
+_________________________________________
+
+let x = 90;
+for (let i = 1; i<=100; i++){
+if (x%3==0 && x%5==0){
+    console.log("done both fizzbuzz : " + " "+ i);
+  // break;
+} else if (x%5==0){
+    console.log("done buzz");
+   // break;
+} else if (x%3==0 ){
+    console.log("done fizz")
+ //  break;
+} else {
+    console.log("i");
+   
+}
+}
+___________________________________________
+let arr = [1,3,4,5,6 ];
+let sum =0;
+for (let i=1; i<=arr.length; i++){
+    sum+=i;
+}
+console.log(sum);
+___________________________________________
+let x = 89;
+if( x >90){
+    console.log("A");
+} else if ( x > 70){
+    console.log("B");
+} else if(  x > 55){
+    console.log("C");
+} else if ( x < 45){
+    console.log("fail");
+} else if ( x> 35){
+    console.log("D");
+} else {
+    console.log("faill")
+}
+______________________________________
+let x = 10;
+for(let i = 2; i <=x/2; i++){
+    if(x % i==0){
+        console.log(i);
+    }
+    }
+     console.log("prime number");
+______________________________________
+
+let array = [ 12,43,56,32,7,65 ];
+let largest = array[0];
+for(let i = 1; i<array.length; i++){
+    if(array[i] >largest){
+        largest= array[i];
+    }
+}
+console.log(largest);
+_________________________________________
+
+const arr = [1,2,3,4];
+ const arr1 = [5,6,7,];
+ const sum = [arr+arr1];
+console.log(sum);
+// not good method;
+-----
+
+ const arr = [1,2,3,4];
+ const arr1 = [5,6,7,];
+ const sum = [...arr,... arr1]
+ console.log(sum);
+______________________________________
+rest opeterater ...
+function sum(...numbers) {
+  return numbers.reduce((a, b) => a + b);
+}
+
+sum(2, 3, 4); // 9
+--------------------
+spread opeterater ...
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5];
+
+console.log(arr2); // [1,2,3,4,5]
+
+___________________________________-
+deep copy
+
+let obj1 = {
+  name: "Uma",
+  address: {
+    city: "Delhi"
+  }
+};
+
+let obj2 = JSON.parse(JSON.stringify(obj1)); // deep copy
+
+obj2.address.city = "Mumbai";
+
+console.log(obj1.address.city); // Delhi ✅
+------------------
+
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5];
+
+console.log(arr2); // [1,2,3,4,5]
+_________________________________________
+const arr = [1,2,3,4,5];
+for(i =0; i< arr.length; i++){
+console.log(arr[i]);
+}
+___________________________________
+const arr = [1,2,3,4,5];
+//for(i =0; i< arr.length; i++){
+//console.log(i);
+//}
+-----------------------
+keys return karega
+//for (i in arr){
+ //  console.log(i);
+//}
+---------------------
+value return karega
+//for (i in arr){
+ //  console.log(arr);
+//}
+___________________________________________________________
+key return kr raha
+
+ arr.at(2)
+console.log(arr.at(2));
+-------------
+
+do arry
+
+console.log(arr.concat(arr));
+-----
+console.log(arr.copyWithin(3));
+[ 1, 2, 3, 1, 2 ]
+------
+console.log(arr.fill(2));
+same value fill ho gayege
+----------------
+const arr = ["apple","b",4,5];
+console.log(arr.includes(3));
+false
+------
+
+const data = arr.map((item) => { return item * 2} )
+const fill = arr.map((item) => { return item < 2})
+console.log(data)
+console.log(fill)
+
+outpute :
+[ NaN, NaN, 2, 8, 10 ]
+[ false, false, true, false, false ]
+______________________________________________-------
+

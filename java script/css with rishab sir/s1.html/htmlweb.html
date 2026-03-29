@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    display: flex;
+      background-color: #552619;
+    color: #f4f4f4;
+    padding: 20px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.main{
+    display: flex;
+    min-height: calc(100vh - 115px);
+}
+
+.sidebar{
+    display: flex;
+    width: 21%;
+     background-color: rgb(255, 247, 179);
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    background-color: #552619;
+    padding: 20px;
+    justify-content: center;
+    color: #f4f4f4;
+}
+.content{
+    display: flex;
+    width: 79%;
+    background-color:rgb(206, 46, 46);
+    justify-content: center;
+    align-items: center;
+}
+.content img{
+  width: 300px;
+}
+</style>
+<body>
+  <div class="header">HTML</div>
+  <div class="main">
+    <div class="sidebar">
+        html
+    </div>
+    <div id="content" class="content">
+      <img src="https://1.bp.blogspot.com/-0-mgpIZ2kQk/Wg4C-omeAnI/AAAAAAAAAW4/ghOM9HkYvNkKEzZF96BO7UD-p98yauzWgCLcBGAs/s1600/html%2Bfeatures%2B%25282%2529.png" alt="HTML Image">
+    </div>
+  </div>
+
+  <div class="footer">My Footer</div>
+</body>
+</html>

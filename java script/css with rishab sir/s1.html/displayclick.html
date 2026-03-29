@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box {
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue; 
+             display: block;
+            background-color: peru;         
+        }
+        #img {
+             display: block;
+             width: 200px;
+             height: 200px;
+             background-color: palegreen;
+        }
+         #box1 {
+            width: 300px;
+            height: 300px;    
+        }
+         #box2 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue; 
+           background-color:purple;        
+        }
+   
+    </style>
+</head>
+<body>
+
+      <button onclick="display()">Click</button>
+    <div id="box">
+        <img id="img" src ="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" onclick="display() ">
+    </div>
+
+    <script>
+        function display() {
+            document.getElementById("img").style.display = "none";
+        }
+    </script>
+     <div id="box1">
+        <div id="box2">
+   <button onclick="display1()">Click</button>
+        </div>
+
+    </div>
+
+    <script>
+        function display1() {
+            document.getElementById("box2").style.backgroundColor = " plum";
+        }
+
+        
+    </script>
+
+</body>
+</html>

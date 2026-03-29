@@ -1,0 +1,93 @@
+                               // jai shree raam //
+30/12/25
+what is java script ?
+what there is need of java script ?
+what are the capability of java script ?
+in how manay areas can be expored ?
+how to declar varaibale in java script ?
+how to insilize the variable in java script ?
+how to redeclaar the variable in java script ?
+how to reinsilize the variable in java script ?
+----------
+diffrence bettween var let and conts ?
+ans := var = insilize , reinsilize , declear, redeclear hota h .
+let := let bss insilize or declear hota h .
+const := bss insilize hota h .
+----------
+what is block scop ?
+what is local scop ?
+what is gobal scop ?
+what is lexical scoping ?
+what is global & local varable ?
+what is ECMASCRIPT ?
+which version of ECMASCRIPT make java script revesionaly ?
+// callback ??
+diffrence bettween ES5, Es6 , es7
+--------------------
+
+1/1/26
+Hosting := is ka problem (galti se hoti h)
+diffreance between double equals to (==) and tiple equal to (===)
+
+double equal to = bss value ko check krte h  
+ex = 
+     const a =3;
+     const b = '3'; // string data type 
+      if (a==b)
+     ans true 
+triple equal to (stricket equal to) = ye value or data type ko check krta h
+ex =
+     const a =3;
+     const b = '3'; // string data type 
+     if (a===b)
+     ans false 
+
+1. how to check the data type of variable ?
+counsulelog(type(a));
+sountion := number  
+counsulelog(type(b));
+sountion :=  string
+
+--------------------------------------
+
+3/1/26
+varaiable ek time pr ek data store krta h!!
+consol.log := is a deburgigng tool
+
+1. what is dot notation?
+2. how to finde data??
+-----------------------------------------
+6/1/26
+1.what is hoasting
+2. how to make global varaiable var world ?
+3. what is call back (so that why code promises) ? 
+_______________________________________________
+
+13/1/26
+
+() function := use to reusubility   **satatic function keyouke we cant change value mean hartcoded?
+new mean = constructor 
+1. what is multable ? (which can be changes)
+2. what is immutable ??
+3. hosting problem mean : decalr niche kiya but assces upar kr rhe h !!
+//object is mutable , value change kar sakte h.
+// ager object reassignt krna ho toh vo  ho jata h , var,char,let farak nhi padhta
+// object main function use kr sakte h
+4. object ko seel or freez keyou krte h ??
+5. what is shalo copy and deep copy ??
+6. what is for in loop ??
+//  or loop ke in arry object doni main lagata h or ye keys deta h
+7. or loop main for ??
+// arry ka data type object h.
+_________________________________________________________________________
+ 
+ 15/1/26
+what is shalo copy & and deep copy ?
+what is the diffreance rest opreater  & spread operater ?
+
+_______________________________________________
+27/1/16
+callback function: jab wesbite loding loding khelti h iske vajaha se hi hota h.
+or ismain time store hota h jases time pura hota h fer outpute show hota h.
+
+

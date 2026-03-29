@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    html,body{
+        background-color:rgb(173, 63, 251);
+
+    }
+    .header{
+        display: flex;
+         justify-content: center;
+        padding: 10px;
+        margin: 0%;
+        position: sticky;
+        color: white;
+        background-color: navy;
+    }
+    .footer{
+         display: flex;
+         justify-content: center;
+        padding: 10px;
+        position: sticky;
+        color: white;
+        background-color: navy;
+    }
+   .main{
+    display: flex;
+    min-height: calc(100vh - 115px);
+    margin: 0%;
+    
+}
+.box{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    background-color:rgb(225, 130, 246);
+      height: 260px;          /* control size */ 
+      margin: 10px;
+      justify-content: center;
+     box-shadow: 5px 10px 10px rgb(22, 22, 133);
+      
+}
+.box:hover{
+   transform: translate(-10px,-10px);   /* box upar jayega */
+    box-shadow: 12px 12px 0px rgb(2, 8, 126); /* shadow dark */
+}
+.ex{
+     margin: 20px;
+    padding: 30px;
+    background-color:rgb(196, 123, 228);
+    cursor: pointer;
+    color: white;
+    box-shadow:  5px 10px 10px rgb(22, 22, 133);
+
+}
+.ex:hover{
+   background-color:rgb(169, 15, 236);
+   border-radius: 10%;
+   color:black;
+}
+.allbox{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+   margin: 5px;
+    padding: 30px;
+    width: 85%;
+    background-color:rgb(225, 179, 245);
+}
+.box h2{
+    padding: 8px;
+    background-color:rgb(169, 15, 236) ;
+      text-shadow: 5px 5px 2px rgb(17, 27, 214);
+    color:white;
+}
+.box h2:hover{
+      text-shadow: 5px 7px 3px rgb(0, 97, 13);
+      background-color:rgb(77, 42, 92)  ;
+}
+.box img{
+    width: 100%;
+    height: calc(100% - 50px);
+      object-fit: cover; 
+}
+
+.sidebar{
+    display: flex;
+    width: 21%;
+    height:87vh;
+     background-color:rgb(225, 179, 245);
+    flex-direction: column;
+}
+</style>
+<body>
+       <div class="header"><h1>HTML</h1></div>
+        <div class="main">
+     <div class="sidebar">
+         <div class="ex"><h3> Introduction</h3></div>
+        <div class="ex"><h3>HTML Basics</h3></div>
+        <div class="ex"><h3>HTML Semantic</h3></div>
+       <div class="ex"><h3>HTML Vs HTML5</h3></div>
+     </div>
+        <div class="allbox">
+        <div class="box">
+            <h2>HTML Introduction</h2>
+            <img src="https://formation.webdevpro.net/html-css/media_html_css/4-structure-page-html.png">
+        </div>
+        <div class="box">
+             <h2>HTML Basics</h2>
+            <img src="https://aptlearn.io/wp-content/uploads/2022/11/3A72FC98-22C5-4BA7-AF85-C18BA8EEB81A.png">
+        </div>
+         <div class="box">
+             <h2>HTML Semantic</h2>
+            <img src="https://static.semrush.com/blog/uploads/media/cc/85/cc85d452a743e27f68d426df35e4da7d/original.png">
+         </div>
+        <div class="box">
+             <h2>HTML Vs HTML5</h2>
+            <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2023/01/html-vs-html5-1024x871.webp">
+        </div>
+       </div>
+    </div>
+    
+    <div class="footer"><marquee behavior="scroll" direction="right" scrollamount="10"><h2>THANK YOU !!</h2></marquee></div>
+</body>
+
+</html>

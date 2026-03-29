@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label>Name</label><br>
+    <input type="email" id="name" placeholder="Enter Your Name" required>
+    <br><br>
+
+    <label>Password</label><br>
+    <input type="text" id="pass" placeholder="Enter Your password" required>
+    <br><br>
+    <label>email</label><br>
+    <input type="text" id="email" placeholder="Enter Your email" required>
+    <br><br>
+     <label>phone number</label><br>
+    <input type="text" id="no" placeholder="Enter Your phone number" required>
+    <br><br>
+      <label>Address</label><br>
+    <input type="text" id="address" placeholder="Enter Your Address" required>
+    <br><br>
+
+    <button type="submit" onclick="login(event)">Login</button>
+</form>
+<p id="demo"></p>
+<p id="msg"></p>
+<script>
+    function login(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("no").value;
+    const address = document.getElementById("address").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("pass").value;
+  
+     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+     const emailRegex =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+     const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+      
+
+    const passCheck = passwordRegex.test(password);
+    const emailCheck = emailRegex.test(email);
+     const phonecheck=  phoneRegex.test(no);
+
+    if (passCheck === true && emailCheck === true &&  phonecheck === true) {
+        const data = { email, password };
+        document.getElementById("demo").innerHTML = "Logged In";
+        document.getElementById("msg").innerHTML = "";
+        console.log(data);
+    } else {
+        document.getElementById("msg").innerHTML = "Wrong type of Password";
+    }
+}
+
+</script>
+</body>
+</html>

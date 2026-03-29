@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript </title>
+</head>
+<style>
+    *{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.body,html{
+   background-color: #130553;   
+}
+.header{
+    display: flex;
+      background-color: #61057d; 
+    color: #ededed;
+    padding: 32px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+      text-shadow: 5px 5px 2px rgb(17, 27, 214);
+      width: 98%;
+}
+.father{
+    display: inline;
+   
+}
+   .mainbox1{
+    width: 98%;
+    padding: 17px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background-color:#a765e1;
+    gap: 10px;
+}
+.mainbox{
+      width: 98%;
+    padding: 17px;
+    gap: 10px;
+     height: 34vh;
+    margin: 10px;
+    background-color:#a765e1;
+      display: flex;
+    justify-content: center;
+
+}
+         .box {
+            width: 298px;
+          height: 225px;
+    margin: 6px;
+            border: 2px solid blue;
+             display: block;
+             justify-content: center;
+            align-content: center;
+          background-image: url("https://i.pinimg.com/originals/e7/44/3a/e7443a38c9f38157ce2587c19b7aa261.jpg");
+         background-size: cover;
+       background-repeat: no-repeat;  
+  box-shadow: 5px 10px 10px rgb(22, 22, 133);
+    background-position: center;   
+        }
+        .box:hover{
+   transform: translate(-10px,-10px);   /* box upar jayega */
+    box-shadow: 12px 12px 0px rgb(59, 3, 88); /* shadow dark */
+}
+        .img {
+             display: block;
+             width: 100%;
+             height: 80%;
+             justify-content: center;
+             background-color: rgba(47, 50, 223, 0.433);
+             object-fit:contain;
+        }
+    
+</style>
+<body>
+    <div class="header"> <h1>JavaScript</h1> </div>
+    <div class="father">
+    <div class="mainbox">
+     <div class="box">
+          <button  onclick="display1()">Click</button>
+        <img id="a" class="img" src ="https://tse4.mm.bing.net/th/id/OIP.vbmpfnv8MuZmSCtIpoqxJAHaEK?pid=Api&P=0&h=180" onclick="display1() ">
+    </div>
+     <div class="box">
+         <button  onclick="display2()">Click</button>
+        <img id="b" class="img" src ="https://tse1.mm.bing.net/th/id/OIP.sIGZ3NEYGmVxUZ2Ab1KkFgHaE8?pid=Api&P=0&h=180" onclick="display2() ">
+    </div>
+     <div class="box">
+             <button  onclick="display3()">Click</button>
+        <img id="c" class="img" src ="https://tse2.mm.bing.net/th/id/OIP.MgsBKTurzPU0RFFYekKRagHaEK?pid=Api&P=0&h=180" onclick="display3() ">
+    </div>
+
+    <div class="box">
+          <button  onclick="display4()">Click</button>
+        <img id="d" class="img"src ="https://image.slidesharecdn.com/basicsofjavascript-200527061552/75/Basics-of-Java-Script-JS-8-2048.jpg" onclick="display4() ">
+    </div>
+    </div>
+     <div class="mainbox1">
+     <div class="box">
+          <button  onclick="display5()">Click</button>
+        <img id="e" class="img" src =https://image.slidesharecdn.com/basicsofjavascript-200527061552/75/Basics-of-Java-Script-JS-16-2048.jpg onclick="display5() ">
+    </div>
+     <div class="box">
+         <button  onclick="display6()">Click</button>
+        <img id="f" class="img" src ="https://tse2.mm.bing.net/th/id/OIP.aTOOfr52W_6D1Zp6U1SV7wHaEK?pid=Api&P=0&h=180" onclick="display6() ">
+    </div>
+     <div class="box">
+             <button  onclick="display7()">Click</button>
+        <img id="g" class="img" src ="https://tse3.mm.bing.net/th/id/OIP.i8x6WaKCajN-LShL-QQ8-gHaFj?pid=Api&P=0&h=180" onclick="display7() ">
+    </div>
+
+    <div class="box">
+          <button  onclick="display8()">Click</button>
+        <img id="h" class="img"src ="https://tse4.mm.bing.net/th/id/OIP.ZZSA28jOIlitidLT2lz7nQHaEK?pid=Api&P=0&h=180" onclick="display8() ">
+    </div>
+    </div>
+</body>
+   <script>
+        function display1() {
+            document.getElementById("a").style.visibility = "hidden";
+        }
+        function display2() {
+            document.getElementById("b").style.visibility = "hidden";
+        }
+        function display3() {
+            document.getElementById("c").style.visibility = "hidden";
+        }
+        function display4() {
+            document.getElementById("d").style.visibility = "hidden";
+        }
+        
+</script>
+<script>
+        function display5() {
+            document.getElementById("e").style.visibility = "hidden";
+        }
+        function display6() {
+            document.getElementById("f").style.visibility = "hidden";
+        }
+        function display7() {
+            document.getElementById("g").style.visibility = "hidden";
+        }
+        function display8() {
+            document.getElementById("h").style.visibility = "hidden";
+        }
+        
+</script>
+</html>

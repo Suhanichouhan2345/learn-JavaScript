@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="layout.css">
+  <title>website</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>WEB DEVELOPMENT COURSE</h1>
+  </div>
+  <div class="main">
+    <div class="sidebar">
+      <a href="how.html" class="tab" target="con">HTML</a>
+      <a href="csslayout.html" class="tab" target="con">css</a>
+      <a href="jslayout.html" class="tab" target="con">js</a>
+      <a href="reactlayout.html" class="tab" target="con">React</a>
+      <a href="expresslayout.html" class="tab" target="con">Express</a>
+      <a href="onlineappayout.html" class="tab" target="con">Online Application</a>
+      <div class="tab">MongoDb</div>
+    </div>
+
+    <iframe id="content" class="content" name="con" src="wellcomelayout.html"></iframe>
+
+
+  </div>
+  <div class="footer">
+    <marquee behavior="scroll" direction="right" scrollamount="10">
+      <h2>WELLCOME ..</h2>
+    </marquee>
+  </div>
+</body>
+<script>
+  let items = document.querySelectorAll(".tab");
+  let data = document.getElementById("content");
+
+  items.forEach((item) => {
+    item.addEventListener("click", () => {
+      const value = item.textContent;
+      data.textContent = value;
+    });
+  });
+</script>
+
+</html>

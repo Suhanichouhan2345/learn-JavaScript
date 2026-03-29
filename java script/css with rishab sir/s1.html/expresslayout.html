@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .body,
+  html {
+    background-color: #0f0d5e;
+  }
+
+  .hearder {
+    display: flex;
+    background-color: #6e029d;
+    color: #f8e7c9;
+    padding: 32px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    text-shadow: 5px 5px 2px #c72fb0;
+    width: 98%;
+  }
+
+  .father {
+    display: inline;
+    height: 100%;
+    width: 80%;
+  }
+
+  .main1 {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    gap: 30px;
+    width: 97%;
+    padding: 7px;
+    height: 40vh;
+        margin: 20px;
+    background-color: #450a79;
+  }
+
+  .main2 {
+    display: flex;
+    padding: 7px;
+    justify-content: center;
+    align-content: last baseline;
+    gap: 30px;
+    width: 97%;
+    height: 40vh;
+    margin: 20px;
+    background-color: #450a79;
+  }
+
+  .box1 {
+    height: 220px;
+    border-radius: 50%;
+    border: 2px solid #ffd166;
+    box-shadow: 5px 5px 15px #cd15b1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #0f0d5e;
+    color: #f8e7c9;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .box1:hover {
+    transform: scale(1.1);
+    background-color:  #371258;
+  }
+
+  .box2 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid #2a8667;
+    box-shadow: 3px 3px 10px #cd15b1;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .box2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff8f00;
+  }
+</style>
+
+<body>
+  <div class="hearder">
+    <h2>Express</h2>
+  </div>
+  <div class="father">
+    <div class="main1">
+      <div class="box1">
+        <h3>About Express</h3>
+        Express is a fast and reliable service used for quick delivery and communication. It focuses on saving time and
+        providing efficient solutions to customers.
+      </div>
+      <div class="box1">
+        <h3>Features of Express</h3>
+        Express offers speed, convenience, and accuracy. It is designed to handle tasks quickly while maintaining safety
+        and quality.
+      </div>
+      <div class="box1">
+        <h3>. Importance of Express</h3>
+        Express plays an important role in modern life by making services faster and more efficient. It helps people and
+        businesses complete their work on time.
+      </div>
+    </div>
+    <div class="main2">
+      <div class="box2">
+        <img src=https://topdev.vn/blog/wp-content/uploads/2023/06/ExpressJS-la-gi-2.webp>
+      </div>
+      <div class="box2">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.sm0ZN0O6ZHKZIHKLIHcUDwHaEO?pid=Api&P=0&h=180">
+      </div>
+      <div class="box2">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.MFCd2riVJ9JhtW6PUCJerAHaFZ?pid=Api&P=0&h=180">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
